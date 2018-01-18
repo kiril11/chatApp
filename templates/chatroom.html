@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Chat Room</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link rel="stylesheet"  type = "text/css" href="{{url_for('static', filename='chatroom.css') }}">
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function () {
+    var socket = io.connect('http://127.0.0.1:5000');
+
+    socket.on('connect', function () {
+        socket.send("{{user}} has connected");
+    });
+
+    socket.on('message', function (msg) {
+        var date = new Date();
+        var user = "{{ user }}";
+
+        var current_time = date.getHours() + ":"
+                + date.getMinutes() + ":"
+                + date.getSeconds();
+        $("#msgs").append('<li id="time">' + current_time + '</li>');
+        $("#msgs").append('<li id="userMsg">' +msg +'</li>');
+
+    });
+
+    $("#myMessage").on('keyup', function (e) {
+    if (e.keyCode == 13) {
+        if ($('#myMessage').val() != '')
+        {
+           socket.send($('#myMessage').val());
+        $('#myMessage').val('');
+        }
+    }
+});
+
+});
+</script>
+
+<div id="message">
+<ul id="msgs"></ul>
+<input type="text" id="myMessage" maxlength="150">
+</div>
+
+<div id="videoPlayer">
+ <iframe width="820" height="620" align="right"
+src="https://www.youtube.com/embed/tzicgKcYQAA">
+     Your browser does not support video!
+</iframe>
+</div>
+<br> </br>
+<a href="dropsession" id="logoff">Logout</a>
+
+</body>
+</html>

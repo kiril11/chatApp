@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company work chat</title>
+    <link rel="stylesheet"  type = "text/css" href="{{url_for('static', filename='index.css') }}">
+</head>
+<body onload="startTime();">
+
+<div id="clock"></div>
+<a href="guest">
+<div class="circle chat"> <span id="chat"> <br> <br> Want to chat? </span>  </div>
+</a>
+
+<a href="user_page">
+<div class="circle upload"> <span id="upload"> <br> <br> Want to share a document?</span>  </div>
+</a>
+
+<script type="text/javascript" src="/static/clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+<link rel="stylesheet"  type = "text/css" href="{{url_for('static', filename='guest.css') }}">
+
+</head>
+<body onload="startTime();">
+
+<div id="clock"></div>
+
+<form method="post" id="logForm">
+    <h1>Enter your nickname</h1>
+    <input type="text" name="user" id="nickname" placeholder="nickname" required maxlength="32" autocomplete="off">
+    <input type="submit" id="submit" value="Let's chat!">
+</form>
+
+<script type="text/javascript" src="/static/clock.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+background-image: url("bodyBackground1.jpg");
+font-family: "Arial", "Times New Roman", "sans-serif";
+}
+#time{
+	font-size: x-small;
+    background-color: cadetblue;
+}
+
+#logoff{
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#userMsg{
+    font-size: large;
+    color:white;
+}
+
+#msgs{
+    list-style: none;
+}
+
+#messages{
+	width: 40%;
+	height: 60%;
+	overflow: auto;
+}
+
+#myMessage{
+	width: 30%;
+	height: 20px;
+}
+
+#videoPlayer{
+    margin: 10px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+

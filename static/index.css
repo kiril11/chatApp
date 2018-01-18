@@ -1,0 +1,48 @@
+body{
+    background-image: url("bodyBackground1.jpg");
+    font-family: "Times New Roman";
+    text-decoration: none;
+    font-style: italic;
+    font-size: xx-large;
+}
+
+.circle {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.chat, .upload {
+    width: 200px;
+    height: 200px;
+    background: lightskyblue;
+    border: none;
+    line-height: 90px;
+    text-align: center;
+}
+
+#chat, #upload {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: white;
+
+}
+
+#uploadHalf{
+    text-align: center;
+            float:right;
+
+}
+
+#clock{
+    border:20px;
+	margin:25px;
+	font-size:xx-large;
+	font-family:sans-serif;
+	float:right;
+    padding: 15px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-style: italic;
+    font-size: large;
+    color:white;
+}

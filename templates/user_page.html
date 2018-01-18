@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share Documents</title>
+<link rel="stylesheet"  type = "text/css" href="{{url_for('static', filename='user_page.css') }}">
+
+</head>
+<body>
+
+<form method="post" action="/upload" enctype="multipart/form-data">
+    <label id = "share" for="inputFile">Share your document</label>
+    <input id="inputFile" type="file" name="inputFile">
+    <button type="submit"> Upload document</button>
+</form>
+
+
+
+<form method="POST" action="/download">
+    <input name="download_file" placeholder="Download file" required autocomplete="off">
+    <button id = "btn"  type="submit" value=""> Download document </button>
+</form>
+
+<h1> {{status}}</h1>
+
+<script type="text/javascript" src="/static/clock.js"></script>
+
+</body>
+</html>
