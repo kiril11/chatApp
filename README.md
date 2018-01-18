@@ -17,3 +17,5 @@ TO DO: Fix web design as currently there is no responsiveness implemented
 Created in: Dec, 2017
 
 Created by: Kiril Kyuchukov
+
+Version: 1.0.0
