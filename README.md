@@ -14,7 +14,7 @@ The app is a basic overview of the usage of SocketIO
 TO DO: Fix web design as currently there is no responsiveness implemented 
 
 
-Created in: Dec, 2017
+Created on: Dec, 2017
 
 Created by: Kiril Kyuchukov
 
